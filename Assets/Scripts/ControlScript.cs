@@ -30,10 +30,12 @@ public class ControlScript : MonoBehaviour
         LessButton.onClick.AddListener(LessButtonClicked);
         FinishButton.onClick.AddListener(FinishButtonClicked);
         StartButton.onClick.AddListener(StartButtonClicked);
-
+      
         SetInfoText($"Загадай число от {Min} до {Max}.");
         CalculateGuess();
-    }
+    } 
+
+ 
 
     private void SetInfoText(string text)
     {
@@ -104,4 +106,6 @@ public class ControlScript : MonoBehaviour
         _calculatedClick++;
         SetCalculatedStep($"Число ходов {_calculatedClick}");
     }
+  
+    
 }

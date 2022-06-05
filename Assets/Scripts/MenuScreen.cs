@@ -10,6 +10,7 @@ public class MenuScreen : MonoBehaviour
     private void Start()
     {
         _playButton.onClick.AddListener(PlayButtonClicked);
+      
     }
 
     private void PlayButtonClicked()
