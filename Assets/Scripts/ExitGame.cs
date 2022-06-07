@@ -1,6 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,17 +12,15 @@ public class ExitGame : MonoBehaviour
         ExitButton.onClick.AddListener(ExitButtonClicked);
     }
 
-    void Update()
-    {
-        ExitButton.onClick.AddListener(ExitButtonClicked);
-        if (Input.GetKey(KeyCode.Escape))
-        {
-            Application.Quit();
-        }
-    }
+  
 
     private void ExitButtonClicked()
     {
+        EditorApplication.isPlaying = false;
         Application.Quit();
     }
+
+    
+    
+    
 }

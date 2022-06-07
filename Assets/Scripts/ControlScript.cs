@@ -99,6 +99,9 @@ public class ControlScript : MonoBehaviour
         Min = _min;
         Max = _max;
         CalculateGuess();
+        
+        
+        
     }
 
     private void StepsCalculation()

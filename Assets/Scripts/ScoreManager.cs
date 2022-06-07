@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 
@@ -10,14 +11,16 @@ public class ScoreManager : MonoBehaviour
 
     private void Awake()
     {
-       
-      /*
+     
       if (_instance!=null)
       {
           Destroy(gameObject);
           return;
       }
-        */
+      
+      
+      
+        
       _instance = this;
       DontDestroyOnLoad(gameObject);
     }
@@ -30,13 +33,8 @@ public class ScoreManager : MonoBehaviour
     public void FinishScore()
     {
         Score = 0;
-     
     }
+    
    
-    public void FinishDestroy()
-    {
-        Score = 0;
-        Destroy(gameObject);
-     
-    }
+   
 }
